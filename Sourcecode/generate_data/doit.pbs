@@ -1,0 +1,8 @@
+#!/bin/sh
+#PBS -l select=1:ncpus=1:mem=16GB
+#PBS -l walltime=12:00:00
+
+module load gurobi/9.0.1
+
+cd /rds/general/user/wwiesema/home/energy/Sourcecode/generate_data
+./a.out

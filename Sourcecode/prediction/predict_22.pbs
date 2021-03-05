@@ -1,0 +1,8 @@
+#!/bin/sh
+#PBS -l select=1:ncpus=4:mem=16GB
+#PBS -l walltime=1:00:00
+
+module load gurobi/9.0.1
+cd $HOME/energy/Sourcecode/prediction
+export PBS_ARRAY_INDEX=22
+./a.out
